@@ -4,5 +4,3 @@ addons:
   sonarcloud:
     organization: "rovanni-github"
 
-script:
-    - sonar-scanner
