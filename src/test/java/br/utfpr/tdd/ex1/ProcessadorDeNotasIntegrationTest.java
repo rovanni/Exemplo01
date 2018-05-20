@@ -39,9 +39,9 @@ public class ProcessadorDeNotasIntegrationTest {
         List<String> expectedLines = Arrays.asList(
                 "RA,Nome,NF,Situacao",
                 "1234,Joao Da Silva,5.4,reprovado por nota",
-                "4567,Maria Souza,8.9,aprovado",
+                "4567,Maria Souza,6.0,aprovado",
                 "4568,Maria Souza Prima,5.0,reprovado por nota e falta",
-                "456448,Souza Prima,7.4,reprovado por falta",
+                "456448,Souza Prima,6.0,reprovado por falta",
                 "488848,Souza Prima Segunda,5.4,reprovado por nota"
         );
         
