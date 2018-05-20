@@ -40,13 +40,19 @@ public class Aluno {
     void setNotaProjeto(double nota) {
         notaProjeto = nota;
     }
-
+    double notaMaior6(double nota){
+        nota=6;
+        return nota;
+    }
     double getNF() {
         double nota=0;
         if(notaRAA < 0){
             nota = (notaProjeto + getNAP()) / 2.0;            
         }else{
             nota = (notaProjeto + getNAP() + notaRAA) / 3.0;            
+        }
+        if (nota>6) {
+            notaMaior6(nota);
         }
         return nota;
     }
