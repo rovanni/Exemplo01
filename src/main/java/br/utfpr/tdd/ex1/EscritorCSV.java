@@ -36,7 +36,7 @@ class EscritorCSV {
         }
     }
 
-    void setArquivoSaida(String filePath) {
+    void setArquivoSaida(String filePath) throws IOException {
         try {
             BufferedWriter writer = Files.newBufferedWriter(Paths.get(filePath));
 
@@ -46,7 +46,10 @@ class EscritorCSV {
         }
         catch(IOException e) {
             LOGGER.log(Level.SEVERE, e.getMessage(), e);
+        }finally{
+            if (csvPrinter == null) csvPrinter.close();
         }
+        
     }
     
 }
