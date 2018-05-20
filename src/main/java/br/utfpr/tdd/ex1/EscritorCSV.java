@@ -1,6 +1,7 @@
 package br.utfpr.tdd.ex1;
 
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.math.RoundingMode;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -30,7 +31,7 @@ class EscritorCSV {
             csvPrinter.printRecord(ra, nome, df.format(notaFinal), situacao);
             csvPrinter.flush();            
         }
-        catch(Exception e) {
+        catch(IOException e) {
             LOGGER.log(Level.SEVERE, e.getMessage(), e);
         }
     }
@@ -43,7 +44,7 @@ class EscritorCSV {
                 .withHeader("RA", "Nome", "NF", "Situacao"));
             csvPrinter.flush();            
         }
-        catch(Exception e) {
+        catch(IOException e) {
             LOGGER.log(Level.SEVERE, e.getMessage(), e);
         }
     }
