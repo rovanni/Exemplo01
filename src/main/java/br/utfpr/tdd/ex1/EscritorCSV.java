@@ -42,14 +42,11 @@ class EscritorCSV {
 
             csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT
                 .withHeader("RA", "Nome", "NF", "Situacao"));
-            csvPrinter.flush();            
+            csvPrinter.flush();          
         }
         catch(IOException e) {
             LOGGER.log(Level.SEVERE, e.getMessage(), e);
-        }finally{
-            if (csvPrinter == null) csvPrinter.close();
         }
-        
     }
     
 }

@@ -41,9 +41,9 @@ public class Aluno {
         notaProjeto = nota;
     }
     double notaMaior6(double nota){
-        int a=0; 
-        a=6;
-        nota=a;
+        if (nota>6) {
+            nota = 6.0;
+        }
         return nota;
     }
     double getNF() {
@@ -53,9 +53,7 @@ public class Aluno {
         }else{
             nota = (notaProjeto + getNAP() + notaRAA) / 3.0;            
         }
-        if (nota>6) {
             nota = notaMaior6(nota);
-        }
         return nota;
     }
 
