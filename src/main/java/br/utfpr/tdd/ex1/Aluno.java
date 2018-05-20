@@ -41,7 +41,9 @@ public class Aluno {
         notaProjeto = nota;
     }
     double notaMaior6(double nota){
-        nota=6;
+        int a=0;
+        a=6;
+        nota=a;
         return nota;
     }
     double getNF() {
