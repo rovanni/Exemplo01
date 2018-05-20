@@ -52,7 +52,7 @@ public class Aluno {
             nota = (notaProjeto + getNAP() + notaRAA) / 3.0;            
         }
         if (nota>6) {
-            notaMaior6(nota);
+            nota = notaMaior6(nota);
         }
         return nota;
     }
