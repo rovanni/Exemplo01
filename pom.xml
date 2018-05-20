@@ -34,11 +34,6 @@
             <version>1.9.5</version>
             <scope>test</scope>
         </dependency>        
-        <dependency>
-            <groupId>org.sonarsource.scanner.maven</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
-            <version>3.4.0.905</version>
-        </dependency>        
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
