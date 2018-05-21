@@ -3,5 +3,4 @@ language: java
 addons:
   sonarcloud:
     organization: "nascimento-github"
-script:
-  - mvn clean sonar:sonar
+
