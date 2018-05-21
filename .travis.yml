@@ -5,4 +5,7 @@ addons:
     organization: "nascimento-github"
 
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+mvn sonar:sonar \
+  -Dsonar.organization=nascimento-github \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=730784478ecf70bf582b2501c5c8c131c32db75a
